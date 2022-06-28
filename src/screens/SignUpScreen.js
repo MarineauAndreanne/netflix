@@ -26,7 +26,10 @@ const SignUpScreen = () => {
     e.preventDefault()
 
     auth
-      .signInWithEmailAndPassword(emailRef.current.value, passwordRef.current)
+      .signInWithEmailAndPassword(
+        emailRef.current.value,
+        passwordRef.current.value
+      )
       .then((authUser) => {
         console.log(authUser)
       })
